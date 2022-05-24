@@ -7,15 +7,15 @@ title:  "[React] Virtual DOM(가상DOM)"
 
 ### DOM (Document Object Model)
 > **돔이란?** 문서 객체 모델이라는 뜻으로, 
-**웹페이지를 이루는 태그들을 자바스크립트가 이용할 수 있게 트리구조로 만든 객체 모델**이다.
+> **웹페이지를 이루는 태그들을 자바스크립트가 이용할 수 있게 트리구조로 만든 객체 모델**이다.
 
 ![](https://velog.velcdn.com/images/eenooyos/post/2e89336e-96e4-4cf7-89ec-3159cee21f55/image.png)
 브라우저 동작원리는, 
 
 > * HTML 파일을 파싱 -> 
-* 외부CSS파일, 각 엘레먼트의 inline 스타일을 파싱하여 스타일 규칙을 만듬 ->
-* 만들어진 DOM트리의 노드들을 attach 메소드를 통하여 객체형태로 반환, 렌더트리를 만들어 줌 ->
-* 렌더트리가 모두 만들어 진 후, 각 노드들의 스크린 좌표가 주어지며, paint메소드를 통해 화면에 그려주게 됨.
+> * 외부CSS파일, 각 엘레먼트의 inline 스타일을 파싱하여 스타일 규칙을 만듬 ->
+> * 만들어진 DOM트리의 노드들을 attach 메소드를 통하여 객체형태로 반환, 렌더트리를 만들어 줌 ->
+> * 렌더트리가 모두 만들어 진 후, 각 노드들의 스크린 좌표가 주어지며, paint메소드를 통해 화면에 그려주게 됨.
 
 이렇게 레이아웃변화, 트리변화에 따라 리렌더링 되어 화면에 그려지게 되는데, 
 **변화를 일으킬때마다** 계산을 처음부터 다시 해주며 트리를 다시그리고, 화면을 다시 그려주게 된다고한다. 
@@ -23,8 +23,8 @@ title:  "[React] Virtual DOM(가상DOM)"
 
 ## Virtual DOM (가상 DOM)
 > **Virtual DOM 이란?** 위와같이 DOM이 그려지는 과정을 변화가 일어났을 때, 
-DOM을 추상화한 가상의 객체를 메모리에 만들어 **DOM을 직접 수정하지 않고, 
-중간 단계로 Virtual DOM을 수정하고 Virtual DOM을 통해서 DOM을 수정하게 하는 것.**
+> DOM을 추상화한 가상의 객체를 메모리에 만들어 **DOM을 직접 수정하지 않고, 
+> 중간 단계로 Virtual DOM을 수정하고 Virtual DOM을 통해서 DOM을 수정하게 하는 것.**
 
 ![](https://velog.velcdn.com/images/eenooyos/post/ce647a75-1bd0-4f7d-a9f6-fe082890007a/image.webp)
 

@@ -6,7 +6,8 @@ title:  "[React] Virtual DOM(가상DOM)"
 ![](https://velog.velcdn.com/images/eenooyos/post/031db58a-6bd9-4154-8909-a0c3ce52eca2/image.jpeg)
 
 ### DOM (Document Object Model)
-> **돔이란?** 문서 객체 모델이라는 뜻으로, **웹페이지를 이루는 태그들을 자바스크립트가 이용할 수 있게 트리구조로 만든 객체 모델**이다.
+> **돔이란?** 문서 객체 모델이라는 뜻으로, 
+**웹페이지를 이루는 태그들을 자바스크립트가 이용할 수 있게 트리구조로 만든 객체 모델**이다.
 
 ![](https://velog.velcdn.com/images/eenooyos/post/2e89336e-96e4-4cf7-89ec-3159cee21f55/image.png)
 브라우저 동작원리는, 
@@ -21,7 +22,8 @@ title:  "[React] Virtual DOM(가상DOM)"
 
 
 ## Virtual DOM (가상 DOM)
-> **Virtual DOM 이란?** 위와같이 DOM이 그려지는 과정을 변화가 일어났을 때, DOM을 추상화한 가상의 객체를 메모리에 만들어 **DOM을 직접 수정하지 않고, 
+> **Virtual DOM 이란?** 위와같이 DOM이 그려지는 과정을 변화가 일어났을 때, 
+DOM을 추상화한 가상의 객체를 메모리에 만들어 **DOM을 직접 수정하지 않고, 
 중간 단계로 Virtual DOM을 수정하고 Virtual DOM을 통해서 DOM을 수정하게 하는 것.**
 
 ![](https://velog.velcdn.com/images/eenooyos/post/ce647a75-1bd0-4f7d-a9f6-fe082890007a/image.webp)
